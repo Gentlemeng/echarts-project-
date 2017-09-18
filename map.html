@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./../node_modules/echarts/dist/echarts.js"></script>
+
+    <!-- <script src="./../node_modules/zrender/src/zrender.js"></script> -->
+</head>
+
+<body>
+    <a href="javascript:void(0);" onclick="goBackChinaMap()" style="height:30px;background:#fff;line-height: 30px;border:1px solid #ccc;padding:5px 10px;margin-left:20px;border-radius:5px;cursor: pointer;color:#393939;text-decoration:none;">
+        返回全国
+    </a>
+    <a href="javascript:void(0);" onclick="goBackChinaMap()" style="height:30px;background:#fff;line-height: 30px;border:1px solid #ccc;padding:5px 10px;margin-left:20px;border-radius:5px;cursor: pointer;color:#393939;text-decoration:none;">
+            返回本省
+    </a>
+    <div id="china" style="width:960px;height:650px;margin:0 auto;position: absolute;top:10px;left:80px;display: block;"></div>
+    <div id="province" style="width:960px;height:650px;margin:0 auto;position: absolute;top:10px;left:80px;display: none;"></div>
+    <div id="city" style="width:960px;height:650px;margin:0 auto;position: absolute;top:10px;left:80px;display: none;"></div>
+    <script>
+			function goBackChinaMap(){
+				$('#china').css('display','block');
+        		$('#province').css('display','none');
+				$('#city').css('display','none');
+			}
+			function goBackProeMap(){
+				$('#china').css('display','none');
+        		$('#province').css('display','none');
+				$('#city').css('display','block');
+			}
+		</script>
+    <script src="./assets/js/china.js"></script>
+    <!-- <script src="./assets/js/hebei.js"></script> -->
+    <!-- <script src="./assets/js/shanghai.js"></script> -->
+    <script src="./assets/js/provinces.js"></script>
+    <script src="./assets/js/provinceName.js"></script>
+    <script src="./assets/js/city.js"></script>
+    <!-- <script src="./set1.js"></script> -->
+    <!-- <script src="./assets/js/hebei/shijiazhuang.js"></script> -->
+    <script src="./set.js"></script>
+    <script></script>
+</body>
+
+</html>
